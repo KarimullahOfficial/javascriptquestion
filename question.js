@@ -49,3 +49,14 @@ if (enternumber === number) {
 } else {
   console.log("your enter number not match");
 }
+// date left for christms
+  today = new Date();
+var chrismis = new Date(today.getFullYear(), 11, 25);
+if (today.getMonth() == 11 && today.getDate() > 25) {
+  chrismis.setFullYear(chrismis.setFullYear() + 1);
+}
+let oneday = 1000 * 60 * 60 * 24;
+console.log(
+  Math.ceil(chrismis.getTime() - today.getTime()) / oneday +
+    "days left in chirsmis"
+);
