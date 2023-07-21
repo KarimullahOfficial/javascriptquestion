@@ -50,7 +50,7 @@ if (enternumber === number) {
   console.log("your enter number not match");
 }
 // date left for christms
-  today = new Date();
+today = new Date();
 var chrismis = new Date(today.getFullYear(), 11, 25);
 if (today.getMonth() == 11 && today.getDate() > 25) {
   chrismis.setFullYear(chrismis.setFullYear() + 1);
@@ -60,3 +60,11 @@ console.log(
   Math.ceil(chrismis.getTime() - today.getTime()) / oneday +
     "days left in chirsmis"
 );
+
+let firstnum = prompt("enter a first number");
+let secondnum = prompt("enter a second number");
+let multi, division;
+multi = firstnum * secondnum;
+division = firstnum / secondnum;
+console.log(" multiplication", multi);
+console.log("division", division);
