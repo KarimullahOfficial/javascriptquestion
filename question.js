@@ -143,3 +143,40 @@ function check(x, y) {
 }
 console.log(check(2, -2));
 console.log(check(-2, -1));
+
+// adding string
+function check_stirng(str) {
+  if (str === null || str === undefined || str.substring(0, 2) == "Py") {
+    return str;
+  } else {
+    return "Py" + str;
+  }
+}
+console.log(check_stirng("python"));
+console.log(check_stirng("thon"));
+
+// remove character
+function remove_char(str1, re) {
+  one = str1.substring(0, re);
+  two = str1.substring(re + 1, str1.lenght);
+  return one + two;
+}
+console.log(remove_char("karim", 0));
+//remove first and last character
+
+function first_last(str2) {
+  if (str2.lenght <= 1) {
+    return str2;
+  }
+  middle = str2.substring(1, str2.lenght, -1);
+  return str2.charAt(str2.lenght, -1) + middle + str2.charAt(0);
+}
+console.log(first_last("mulh"));
+console.log(first_last("karim"));
+// add string first and back
+function first_back(str) {
+  first = str.substring(0, 1);
+  return first + str + first;
+}
+console.log(first_back("alpah"));
+console.log(first_back("beta"));
