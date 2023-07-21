@@ -68,3 +68,50 @@ multi = firstnum * secondnum;
 division = firstnum / secondnum;
 console.log(" multiplication", multi);
 console.log("division", division);
+
+// convert tempreature in to farnheit and celcius;
+
+let celcius = prompt("enter a celcius");
+let farn = prompt("enter a farn");
+let cel = celcius / 5;
+let faran = (farn - 32) / 9;
+console.log("celcius", cel, "farnhaite ", faran);
+
+//get url
+console.log(document.URL);
+
+//create a varible by userdefine
+
+let var_name = "yz";
+let n1 = 3;
+this[var_name] = n1;
+console.log(this[var_name]);
+var filename = "index.html";
+console.log(filename.split(".").pop());
+//difference
+function diffence(n) {
+  if (n < 13) return 13 - n;
+  else return (13 - n) * 2;
+}
+console.log(diffence(20));
+console.log(diffence(10));
+//two number add if they same retrun triple
+
+let number1 = 3;
+let number2 = 2;
+let sum = number1 + number2;
+if (number1 == number2) {
+  console.log(sum * 3);
+} else {
+  console.log(sum);
+}
+// absolute difference
+function absolute(n) {
+  if (n < 19) {
+    return 19 - n;
+  } else {
+    return (n - 19) * 3;
+  }
+}
+console.log(absolute(34));
+console.log(absolute(12));
