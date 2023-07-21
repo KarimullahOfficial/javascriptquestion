@@ -115,3 +115,31 @@ function absolute(n) {
 }
 console.log(absolute(34));
 console.log(absolute(12));
+
+//check pair
+
+function pair(x, y) {
+  return x == 50 || y == 50 || x + y == 50;
+}
+console.log(pair(10, 40));
+console.log(pair(50, 50));
+
+// check with in 100 and 400
+function test1(x) {
+  return Math.abs(100 - x) <= 20 || Math.abs(400 - x) <= 20;
+}
+
+console.log(test1(10));
+console.log(test1(40));
+console.log(test1(300));
+// given two integer whether its positive or negative
+
+function check(x, y) {
+  if ((x < 0 && y > 0) || (x > 0 && y < 0)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(check(2, -2));
+console.log(check(-2, -1));
