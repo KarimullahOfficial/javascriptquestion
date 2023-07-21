@@ -180,3 +180,13 @@ function first_back(str) {
 }
 console.log(first_back("alpah"));
 console.log(first_back("beta"));
+
+// check the number is divisible by 3 and 7
+function test1(x) {
+  if (x % 3 == 0 || x % 7 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log();
