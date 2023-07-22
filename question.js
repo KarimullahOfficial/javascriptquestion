@@ -306,4 +306,25 @@ const ara=[1,2,3,4]
   console.log(result)
   const result2=Array.isArray(ar2)
   console.log(result2)
+
+
+  const aray=function(array,number)
+  {
+      if(array==0)
+      return void 0;
+      if(number==null)
+      return array[0]
+      if(number==0)
+      return []
+      return array.slice(0,number)
+      
+  }
+  console.log(aray([7,9,0,-2]))
+  
+  console.log(([7, 9, 0, -2],3));
+ 
+  a=["red","green", "black"]
+  console.log(a.toString())
+  console.log(a.join(""))
+  console.log(a.join("+")) 
   
