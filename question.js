@@ -299,3 +299,11 @@ function revers(str) {
   return str.split("").reverse().join("");
 }
 console.log(revers("JavaScript"));
+//check arry or not
+const ara=[1,2,3,4]
+  const ar2="karim"
+ const result=Array.isArray(ara)
+  console.log(result)
+  const result2=Array.isArray(ar2)
+  console.log(result2)
+  
