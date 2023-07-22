@@ -213,3 +213,18 @@ function add(str) {
   }
 }
 console.log(add("ab"));
+
+// check wheather string is start with java or no not and lenght 4
+function check(str) {
+  if (str.length <= 4) {
+    return false;
+  }
+  front = str.substring(0, 4);
+  if ((front = "Java")) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(check("    javascript"));
+console.log(check("sct"));
