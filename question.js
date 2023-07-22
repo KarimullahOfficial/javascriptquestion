@@ -189,4 +189,27 @@ function test1(x) {
     return false;
   }
 }
-console.log();
+console.log(test1(50));
+console.log(test1(15));
+//check wheather a number in between 50 && 90
+function check(x, y) {
+  if ((x >= 50 && y <= 90) || (y >= 90 && x <= 50)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(check(45, 78));
+
+// check string  length is 3 or not
+function add(str) {
+  if (str.length >= 3) {
+    strlen = 3;
+    back = str.substring(str.length - 3);
+
+    return back + str + back;
+  } else {
+    return false;
+  }
+}
+console.log(add("ab"));
