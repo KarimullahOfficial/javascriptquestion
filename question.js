@@ -267,3 +267,36 @@ function minvalue(x, y, z) {
   return min;
 }
 console.log(minvalue(1, 2, 3));
+// find nearset
+function nearset(x, y) {
+  if (x != y) {
+    x1 = Math.abs(x - 100);
+    y1 = Math.abs(y - 100);
+  }
+  if (x1 < y1) {
+    return x;
+  }
+  if (y1 < x1) {
+    return y;
+  } else {
+    return 0;
+  }
+}
+console.log(nearset(90, 97));
+function check(x, y) {
+  if (
+    (x >= 40 && x <= 60 && y >= 40 && y <= 60) ||
+    (x >= 70 && x <= 100 && y >= 70 && y <= 100)
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(check(89, 90));
+// revese string 
+function revers(str)
+{
+    return str.split("").reverse().join("")
+}
+console.log(revers("JavaScript"));
