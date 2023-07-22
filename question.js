@@ -294,9 +294,8 @@ function check(x, y) {
   }
 }
 console.log(check(89, 90));
-// revese string 
-function revers(str)
-{
-    return str.split("").reverse().join("")
+// revese string
+function revers(str) {
+  return str.split("").reverse().join("");
 }
 console.log(revers("JavaScript"));
