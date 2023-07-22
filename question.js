@@ -228,3 +228,42 @@ function check(str) {
 }
 console.log(check("    javascript"));
 console.log(check("sct"));
+// check 3 integer include or not
+function check(x, y, z) {
+  if ((x <= 50 && y >= 90) || y <= 50 || y >= 90 || (z <= 50 && y >= 90)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(check(67, 89, 90));
+console.log(check(1, 2, 3));
+//find max value
+function maxvalue(x, y, z) {
+  max = 0;
+  if (x > y) {
+    max = x;
+  } else {
+    max = y;
+  }
+  if (z > max) {
+    max = z;
+  }
+  return max;
+}
+console.log(maxvalue(1, 2, 3));
+
+//find min value
+function minvalue(x, y, z) {
+  min = 0;
+  if (x < y) {
+    min = x;
+  } else {
+    min = y;
+  }
+  if (z < min) {
+    min = z;
+  }
+  return min;
+}
+console.log(minvalue(1, 2, 3));
